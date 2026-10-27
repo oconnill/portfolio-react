@@ -5,8 +5,7 @@ import { Media } from "./Media";
 
 /**
  * Two-column grid of thumbnails, each pushed down a further 30vh so they
- * stagger. Like the original, it only appears for categories with more than
- * three entries.
+ * stagger. Only appears for categories with more than three entries.
  */
 export function StaggeredImageGrid() {
   const { menuOptions, isOutlined, open, setOutlined } = usePortfolio();
@@ -14,7 +13,7 @@ export function StaggeredImageGrid() {
   if (menuOptions.length <= 3) return null;
 
   return (
-    <div className="back-grid row">
+    <div className="row">
       <div className="col-3" />
       {menuOptions.map((option, i) => {
         const top = i === 0 ? undefined : `${i * 30}vh`;

@@ -1,4 +1,4 @@
-/** Inline replacements for the three Font Awesome icons the site used. */
+/** Inline SVG icons for the contact links. */
 
 const base = { width: "1em", height: "1em", viewBox: "0 0 16 16", "aria-hidden": true } as const;
 

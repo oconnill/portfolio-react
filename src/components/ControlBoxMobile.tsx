@@ -12,7 +12,7 @@ export function ControlBoxMobile() {
         <Logo onClick={reset} />
       </div>
 
-      <div className={`mobile-menu-option-title${category ? " active" : ""}`}>
+      <div className="mobile-menu-option-title">
         {visibleCategories.map((title) => (
           <h3 key={title} className="menu-option-title" onClick={() => selectCategory(title)}>
             {title}

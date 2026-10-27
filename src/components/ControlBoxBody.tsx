@@ -14,7 +14,7 @@ export function ControlBoxBody() {
 
   return (
     <div className="control-box-cont">
-      <div className={`control-box-title${category ? " active" : ""}`}>
+      <div className="control-box-title">
         {visibleCategories.map((title) => (
           <h3 key={title} className="menu-option-title">
             <a href="#" onClick={prevent(() => selectCategory(title))}>

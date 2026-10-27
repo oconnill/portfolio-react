@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 
 /**
  * Types `text` out one character at a time, restarting whenever `text` or
- * `restartKey` changes. Replaces the setTimeout loop that was duplicated in
- * four Vue components.
+ * `restartKey` changes.
  */
 export function useTypewriter(text: string, restartKey: unknown, speedMs = 50): string {
   const [count, setCount] = useState(0);

@@ -14,12 +14,12 @@ export function SinglePageView({ project }: { project: Project }) {
     <div>
       <div className="row">
         <div className="col-3 red" />
-        <div className="col-12 col-lg-8 green">
+        <div className="col-12 col-lg-8">
           <div className="project-title">
             <h2>{project.name}</h2>
           </div>
 
-          <div className={project.browserMockup ? "browser-mockup with-url" : undefined}>
+          <div className={project.browserMockup ? "browser-mockup" : undefined}>
             {project.browserMockup && <div className="browser-input">{typedUrl}</div>}
             <div className="mock-up-frame">
               {project.featuredImage && (

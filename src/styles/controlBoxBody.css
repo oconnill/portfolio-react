@@ -1,4 +1,3 @@
-/* Ported from public/controlBoxBody.scss */
 .control-box-body {
   float: right;
   clear: both;
@@ -10,7 +9,6 @@
   float: right;
   padding-right: 5px;
   text-align: right;
-  transition: 6s;
 }
 
 .control-box-cont {

@@ -1,7 +1,6 @@
 /**
- * Portfolio content, ported from the Vuex store in portfoliov2.
+ * Portfolio content.
  * Asset paths are relative to /public/assets (see src/lib/assetUrl.ts).
- * Copy has been carried over verbatim.
  */
 
 export type Category = "development" | "design" | "photography";
@@ -20,7 +19,7 @@ export type Skill =
   | "sass"
   | "mongo";
 
-/** Display order matches the original SoftwareIcons component. */
+/** Icons are displayed in this order. */
 export const SKILL_ICONS: Record<Skill, string> = {
   mysql: "software_icons/logo-mysql-170x115.png",
   vue: "software_icons/Vue.js_Logo.svg",

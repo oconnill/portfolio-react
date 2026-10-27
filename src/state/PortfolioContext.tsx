@@ -9,9 +9,8 @@ import {
 } from "../data/projects";
 
 /**
- * Replaces the Vuex store. The original kept ~10 overlapping flags
- * (welcome, beenClicked, isActive, singlePageView, ...); here they are all
- * derived from three pieces of state.
+ * App state. Everything the UI needs (welcome screen, active menu, open
+ * project, gallery) is derived from these few fields.
  */
 interface State {
   category: Category | null;
@@ -88,7 +87,7 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
       openProject: projects.find((p) => p.name === state.openProjectName) ?? null,
       openCount: state.openCount,
       showGallery: state.category !== null && state.category !== "development",
-      isOutlined: (option) => isProject(option) && !!state.outlined[option.name],
+      isOutlined: (option) => isProject(option) && state.outlined[option.name],
       selectCategory: (category) => dispatch({ type: "selectCategory", category }),
       open: (name) => dispatch({ type: "openProject", name }),
       setOutlined: (name, outlined) => dispatch({ type: "setOutlined", name, outlined }),
