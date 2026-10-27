@@ -196,8 +196,6 @@ const design: MenuOption[] = [
       "A logo mark for Chicago based Black Line Productions. A small film production studio with a focus on documentaries and young filmakers.",
     thumbnail: "images/blacklineproductions_big_logo.png",
     featuredImage: "images/blacklineproductions_big_logo.png",
-    // NOTE: carried over from the original data, these are Early Childhood images.
-    gallery: ["images/earlychildhoodfront.png", "images/earlychildhoodback.png"],
     outlined: false,
   },
   {
