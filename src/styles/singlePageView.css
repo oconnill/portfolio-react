@@ -1,0 +1,41 @@
+/* Ported from public/singlepageview.scss */
+.browser-input {
+  display: block;
+  position: absolute;
+  /* rem, not em, so the bar clears the traffic-light dots at any font size */
+  top: -1.6rem;
+  left: 5.5rem;
+  width: calc(100% - 6rem);
+  height: 1.2rem;
+  padding: 0 0.4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.mock-up-frame img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.project-text-block {
+  font-size: 12px;
+  text-align: center;
+  max-width: 500px;
+  line-height: 1.5;
+  margin: auto;
+  padding: 40px;
+}
+
+.comp-image-frame {
+  padding-bottom: 200px;
+}
+
+@media (max-width: 768px) {
+  .browser-input {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,115 @@
+/* Ported from public/controlBox.scss */
+.control-box {
+  top: 50%;
+  left: 50%;
+  margin-top: -169px; /* half the height */
+  margin-left: -157px; /* half the width */
+  overflow: hidden;
+  position: fixed;
+  height: 338px;
+  width: 314px;
+  border: 1px black solid;
+  background: #fff;
+  transition: 2s;
+}
+
+.control-box.active {
+  left: 172px;
+}
+
+.control-box .control-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  background: none;
+  border-top: 1px black solid;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.control-box .control-footer a {
+  padding-right: 5px;
+  color: black;
+}
+
+.control-box .control-footer a:hover {
+  color: blue;
+}
+
+.control-header {
+  display: flex;
+  padding: 5px;
+  background: none;
+  border-bottom: 1px black solid;
+  justify-content: space-between;
+}
+
+.mobile-menu-option-title {
+  float: right;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+  transition: 6s;
+}
+
+.control-box-mobile {
+  display: none;
+}
+
+/* Logo (now a button for keyboard access; visually unchanged) */
+.logo-icon {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.do-logo {
+  display: flex;
+}
+
+.do-logo-d,
+.do-logo-o {
+  display: block;
+  height: 20px;
+  margin-left: 4px;
+  animation: color_change 5s infinite alternate;
+}
+
+.do-logo-d {
+  width: 14px;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.do-logo-o {
+  width: 20px;
+  border-radius: 50%;
+}
+
+@keyframes color_change {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: red;
+  }
+}
+
+@media (max-width: 768px) {
+  .control-box {
+    display: none;
+  }
+
+  .control-box-mobile {
+    display: block;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px black solid;
+    padding-left: 0 !important;
+    overflow: hidden;
+    background: #fff;
+  }
+}

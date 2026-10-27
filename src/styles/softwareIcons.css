@@ -1,0 +1,25 @@
+/* Ported from public/softwareicons.scss */
+.icon-box {
+  --icon-height: 45px;
+  justify-content: center;
+}
+
+.software-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.inner-icon img {
+  object-fit: contain;
+  height: var(--icon-height);
+}
+
+.outter-icon {
+  padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .icon-box {
+    --icon-height: 35px;
+  }
+}
