@@ -5,7 +5,6 @@ import { EnvelopeIcon, GitHubIcon, LinkedInIcon } from "./Icons";
 import { Logo } from "./Logo";
 import "../styles/controlBox.css";
 
-/** The fixed menu box on desktop (slides left once a category is chosen), plus the mobile header. */
 export function ControlBox() {
   const { category, reset } = usePortfolio();
 
@@ -24,7 +23,7 @@ export function ControlBox() {
           <a href="https://github.com/oconnill" target="_blank" rel="noreferrer" aria-label="GitHub">
             <GitHubIcon />
           </a>
-          <a href="mailto:daniel.richard.oconnell@gmail.com" aria-label="Email">
+          <a href="mailto:doconnelldesign@gmail.com" aria-label="Email">
             <EnvelopeIcon />
           </a>
         </div>
